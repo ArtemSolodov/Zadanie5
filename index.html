@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Задание 5</title>
+    </head>
+<body>
+
+    <header id="header">
+        <div class="contain">
+            <img src="logo.png" alt="Логотип" class="logo">
+            <nav id="nav">
+                <ul>
+                    <li><a href="#link1">Главная</a></li>
+                    <li><a href="#link2">О нас</a></li>
+                    <li><a href="#link3">Контакты</a></li>
+                    <li><a href="#link4">Поддержка</a></li>
+                </ul>
+            </nav>
+            <h1>Лягушка</h1>
+        </div>
+    </header>
+
+    <div class="container">
+    <h1>Калькулятор стоимости товара</h1>
+
+    <div class="product">
+        <span>Лягушка (10000р): </span>
+        <div class="quantity-controls">
+            <button onclick="decreaseQuantity('product1')">-</button>
+            <span id="product1">0</span>
+            <button onclick="increaseQuantity('product1')">+</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <span>Террариум (5000р): </span>
+        <div class="quantity-controls">
+            <button onclick="decreaseQuantity('product2')">-</button>
+            <span id="product2">0</span>
+            <button onclick="increaseQuantity('product2')">+</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <span>Корм для лягушек 400г (1000р): </span>
+        <div class="quantity-controls">
+            <button onclick="decreaseQuantity('product3')">-</button>
+            <span id="product3">0</span>
+            <button onclick="increaseQuantity('product3')">+</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <span>Мягкая игрушка вид 1 (299р): </span>
+        <div class="quantity-controls">
+            <button onclick="decreaseQuantity('product4')">-</button>
+            <span id="product4">0</span>
+            <button onclick="increaseQuantity('product4')">+</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <span>Мягкая игрушка вид 2 (499р): </span>
+        <div class="quantity-controls">
+            <button onclick="decreaseQuantity('product5')">-</button>
+            <span id="product5">0</span>
+            <button onclick="increaseQuantity('product5')">+</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <span>Мягкая игрушка вид 3 (699р): </span>
+        <div class="quantity-controls">
+            <button onclick="decreaseQuantity('product6')">-</button>
+            <span id="product6">0</span>
+            <button onclick="increaseQuantity('product6')">+</button>
+        </div>
+    </div>
+
+    <div class="product">
+      <span>Футболка с лягушкой (999р): </span>
+        <div class="quantity-controls">
+            <button onclick="decreaseQuantity('product7')">-</button>
+            <span id="product7">0</span>
+            <button onclick="increaseQuantity('product7')">+</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <span>Маленькая шляпа (199р): </span>
+        <div class="quantity-controls">
+            <button onclick="decreaseQuantity('product8')">-</button>
+            <span id="product8">0</span>
+            <button onclick="increaseQuantity('product8')">+</button>
+        </div>
+    </div>
+
+        <button id="calculate" onclick="calculateTotal()">Рассчитать стоимость</button>
+
+        <h2>Итоговая стоимость: р<span id="total">0</span></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
